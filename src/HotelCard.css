@@ -1,0 +1,68 @@
+.hotel-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(48%); /* Makes cards smaller and ensures two cards fit in a row */
+  max-width: 500px; /* Prevents overly large cards on bigger screens */
+}
+
+.hotel-card:hover {
+  transform: scale(1.02); /* Subtle hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 160px; /* Smaller image height for compact cards */
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.hotel-card .hotel-info {
+  padding: 15px;
+}
+
+.hotel-card .hotel-info h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+.hotel-card .hotel-info p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.hotel-card .hotel-info .location {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.hotel-card .hotel-info .book-now-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: goldenrod;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.hotel-card .hotel-info .book-now-btn:hover {
+  background-color: #d1a255;
+}
+
+@media (max-width: 768px) {
+  .hotel-card {
+    width: 100%; /* Full width for mobile screens */
+  }
+}

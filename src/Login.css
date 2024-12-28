@@ -1,0 +1,98 @@
+/* Ensure the background image covers the entire viewport */
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* BackgroundImage container styles */
+.background-image {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send to the background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Login container positioned below the background */
+.login-container {
+  width: 400px; /* Adjusted width */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  position: relative; /* Adjust placement */
+  top: 70vh; /* Push below the image */
+  transform: translateY(-50%); /* Center vertically under the image */
+}
+
+/* Adjust login form styles */
+.login-title {
+  font-size: 28px;
+  color: #5a5a5a;
+  margin-bottom: 25px;
+}
+
+.login-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.login-tab {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #b6a567;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.login-tab.active {
+  color: #5a5a5a;
+  border-bottom: 3px solid #5a5a5a;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-terms {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.login-terms a {
+  color: #b6a567;
+  text-decoration: none;
+}
+
+.login-terms a:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  background-color: #b6a567;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login-button:hover {
+  background-color: #a59454;
+}

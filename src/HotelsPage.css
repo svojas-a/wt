@@ -1,0 +1,19 @@
+.hotels-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hotels-title {
+    font-size: 32px;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+  }
+  
+  .hotels-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
